@@ -100,7 +100,15 @@
 		}
 		@media screen and (max-width: 600px) {
 		#text-below,
-		#text-between,
+		body {
+			background: url('back5.jpg') center/cover no-repeat fixed;
+			overflow-y: auto;
+			background-size: 100% 100vh; /* Adjust background size for vertical coverage */
+		}
+		#text-between {
+			margin-bottom: 0px; /* Adjust the margin as needed */
+			margin-top: 0px;
+		}
 		#header {
 			padding: 5px 20px; /* Adjust padding for these sections on smaller screens */
 		}
@@ -114,8 +122,8 @@
 		}
 
 		.icon img {
-			width: 20px;
-			height: 20px;
+			width: 30px;
+			height: 30px;
 		}
 
 		#image-section {
