@@ -99,40 +99,48 @@
 			font-weight: bold;
 		}
 		@media screen and (max-width: 600px) {
-        #text-below,
-        #text-between,
+		#text-below,
+		#text-between,
 		#header {
-			padding: 5px 100px;
-			/* Transparent black background for the header */
+			padding: 5px 20px; /* Adjust padding for these sections on smaller screens */
 		}
+
 		#icons {
-            padding: 0; /* Remove padding for these sections on smaller screens */
-        }
-		.icon img {
-			width: 30px;
-			height: 30px;
-		}
-		#image-section {
-			background-size: 110px 140px;
-			padding: 13vh 20px;
-		}
-        #icons {
+			padding: 0; /* Remove padding for these sections on smaller screens */
 			display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap; /* Allow icons to wrap to the next line if necessary */
-        }
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 5px; /* Adjust the gap between icons */
+		}
+
+		.icon img {
+			width: 20px;
+			height: 20px;
+		}
+
+		#image-section {
+        /* background-size: 10px 80px; Adjust the background size for the circular image */
+        padding: 5vh 0; /* Adjust padding for the circular image section */
+        text-align: center; /* Center the image horizontally */
+    }
+
+		#image-section img {
+			width: 180px; /* Adjust the width of the circular image */
+			height: 180px; /* Adjust the height of the circular image */
+		}
 		#text-below {
 			margin-bottom: 5px; /* Adjust the margin as needed */
 		}
+
 		#text-below p {
-			/* Adjust the top and bottom margin for each paragraph as needed */
-			font-size: 10px;
+			font-size: 10px; /* Adjust the font size for the paragraphs */
 		}
-        .icon {
-            margin: 3px; /* Add some minimal space between icons */
-        }
-    }
+
+		.icon {
+			margin: 3px; /* Add some minimal space between icons */
+		}
+	}
+
 	</style>
 </head>
 <body>
