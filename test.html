@@ -3,46 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My One Page Website</title>
+    <title>Test Page</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            background: url('back.jpg') center/cover no-repeat; /* Replace 'background-image.jpg' with your image file */
             text-align: center;
         }
 
         #header {
-            position: relative;
             text-align: center;
-            color: white;
-            padding: 50px 0;
-            background: url('person-image.jpg') center/cover no-repeat; /* Replace 'person-image.jpg' with your image file */
+            color: rgb(50, 37, 37);
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.0); /* Transparent black background for the header */
+        }
+
+        #header h1, #header p {
+            margin: 0;
+        }
+
+        #image-section {
+            text-align: center;
+            padding: 150px 20px 170px; /* Adjust the padding percentages as needed */
+            background: url('imagem1.jpg') center/contain no-repeat; /* Replace 'person-image.jpg' with your image file */
+            background-size: 240px 300px;
+            /* background-size: cover; */
         }
 
         #icons {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            padding: 50px 0;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+            gap: 20px; /* Adjust the gap between icons */
         }
 
         .icon {
-            width: 64px;
+            /* width: 64px;
             height: 64px;
             background-color: #3498db;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 10px;
+            margin-bottom: 10px; */
         }
 
         .icon img {
             width: 40px;
             height: 40px;
-            filter: brightness(0) invert(1);
+            /* filter: brightness(0) invert(1); */
+        }
+        
+        #icons a {
+            color: #ffffff; /* Default color for the text */
+            text-decoration: none;
+        }
+
+        #icons a:hover {
+            color: #001882; /* Change color on hover */
         }
     </style>
 </head>
@@ -50,25 +72,37 @@
 
     <div id="header">
         <h1>Welcome to My Website</h1>
-        <p>Subtitle or tagline goes here</p>
+        <p>Carolina Vela Bastos</p>
+    </div>
+
+    <div id="image-section">
+        <!-- Smaller, rectangular image goes here -->
     </div>
 
     <div id="icons">
         <div class="icon">
-            <img src="instagram-logo.png" alt="Instagram">
-            <p>Instagram</p>
+            <a href="https://www.instagram.com/carolinavelabastos/" target="_blank">
+                <img src="instagram.png" alt="Instagram">
+                <p>Instagram</p>
+            </a>
         </div>
         <div class="icon">
-            <img src="facebook-logo.png" alt="Facebook">
-            <p>Facebook</p>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook.png" alt="Facebook">
+                <p>Facebook</p>
+            </a>
         </div>
         <div class="icon">
-            <img src="twitter-logo.png" alt="Twitter">
-            <p>Twitter</p>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter.png" alt="Twitter">
+                <p>Twitter</p>
+            </a>
         </div>
         <div class="icon">
-            <img src="linkedin-logo.png" alt="LinkedIn">
-            <p>LinkedIn</p>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn">
+                <p>LinkedIn</p>
+            </a>
         </div>
     </div>
 
